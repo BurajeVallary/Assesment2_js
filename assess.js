@@ -48,13 +48,20 @@ function getBooksByAuthor(authorName) {
 // to the library, ensuring that the new book has all required properties (title, author,
 //  publicationYear, and isAvailable).  
 
+function addNewBook(book) {
+   
+    if (!book.title || !book.author || !book.publicationYear || !book.isAvailable) {
+      console.log(' The book has all  required properties');
+      return;
+    }
+  
+    books.push(book);
+    console.log('The book has been added .');
+  }
+  
 
-function addNewBook(bookObject){
-   books.push({title:"Betrayal",author:"James Paul",publicationYear:2000,isAvailable:true});
-   console.log(addNewBook(bookObject));
-
-}
-console.log(addNewBook(bookObject));
+  const newBook = { title: 'River and the source', author: 'Grace Njeri', publicationYear: 2023, isAvailable: true };
+  addNewBook(newBook);
 
 
 // Create a function checkoutBook that takes a book title as an argument and changes
