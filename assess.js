@@ -69,19 +69,19 @@ function addNewBook(book) {
 // the book's isAvailable property to false. If the book is not found in the library, the
 // function should return a message indicating that the book is not available.
 
-// function checkoutBook(bookTitle) {
-//     const book = books.findIndex(book => book.title === bookTitle);
+function checkoutBook(bookTitle) {
+    const book = books.findIndex(book => book.title === bookTitle);
   
-//     if (book === -1) {
-//       console.log(`The book "${bookTitle}" is not available in the library.`);
-//       return;
-//     }
+    if (book === -1) {
+      console.log(`The book "${bookTitle}" is not available in the library.`);
+      return;
+    }
   
-//     books[book].isAvailable = false;
+    books[book].isAvailable = false;
   
 
-//     }
-//     console.log(`The book "${bookTitle}" is not available.`);
+    }
+    console.log(`The book "${bookTitle}" is not available.`);
 
 
 
@@ -91,19 +91,19 @@ function addNewBook(book) {
     // should return a message indicating that the book does not belong to the library.    
 
 
-    // function returnBook(bookTitle){
-    //     const book =books.findIndex(bookTitle===bookTitle);
-    //     if (book ===findIndex[-1]) {
-    //         console.log(`The book ${bookTitle}"is available"`);
+    function returnBook(bookTitle){
+        const book =books.findIndex(bookTitle===bookTitle);
+        if (book ===findIndex[-1]) {
+            console.log(`The book ${bookTitle}"is available"`);
             
-    //     }
-    //     else{
-    //         return "The book does not belong to the library"
-    //     }
+        }
+        else{
+            return "The book does not belong to the library"
+        }
 
-    // }
+    }
 
-    // console.log(returnBook("The Odyssey"))
+    console.log(returnBook("The Odyssey"))
 
 
   
